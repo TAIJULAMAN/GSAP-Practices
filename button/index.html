@@ -5,6 +5,7 @@
   <title>GSAP Button Hover</title>
   <style>
     .btn {
+   margin: 100px 100px;
       background: #2196f3;
       color: white;
       padding: 15px 30px;
@@ -12,7 +13,7 @@
       border: none;
       cursor: pointer;
       border-radius: 8px;
-      transition: background 0.3s;
+      /* transition: background 0.3s; */
     }
   </style>
 </head>
@@ -26,7 +27,7 @@
     button.addEventListener("mouseenter", () => {
       gsap.fromTo(button,
         {scale: 1},
-        {scale: 1.1, duration: 0.2, yoyo: true, repeat: 1, ease: "power1.out"}
+        {scale: 1.2, duration: 1, yoyo: true, repeat: -1, ease: "power1.inOut"}
       );
     });
   </script>
